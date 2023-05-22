@@ -1,4 +1,5 @@
 provider "aws" {
+
   access_key = "AKIA5UEC5Z6ABDKLYT52"
   secret_key = "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"
   region     = "ap-southeast-2"
@@ -133,7 +134,7 @@ resource "aws_ecs_task_definition" "task" {
   container_definitions     = jsonencode([
     {
       name                  = "app_container"
-      image                 = "936577453952.dkr.ecr.ap-southeast-2.amazonaws.com/ecs-demoasif:latest"
+      image                 = "936577453952.dkr.ecr.ap-southeast-2.amazonaws.com/asif_app:latest"
       essential             = true
   
       portMappings          = [
