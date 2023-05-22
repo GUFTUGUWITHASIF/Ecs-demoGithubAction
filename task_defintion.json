@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:936577453952:task-definition/aws_task_definition:7",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:936577453952:task-definition/aws_task_definition:9",
     "containerDefinitions": [
         {
             "name": "app_container",
-            "image": "936577453952.dkr.ecr.ap-southeast-2.amazonaws.com/ecs-demoasif:latest",
+            "image": "936577453952.dkr.ecr.ap-southeast-2.amazonaws.com/ecs-task1:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -21,7 +21,7 @@
     "family": "aws_task_definition",
     "executionRoleArn": "arn:aws:iam::936577453952:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -52,7 +52,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-05-22T05:12:57.513Z",
+    "registeredAt": "2023-05-22T11:18:34.606Z",
     "registeredBy": "arn:aws:iam::936577453952:user/Mohammad_Asif",
     "tags": []
 }
